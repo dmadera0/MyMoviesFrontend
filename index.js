@@ -1,3 +1,4 @@
+
 const apiKey = "eccae21236f50571310ed5eb92155abe"
 
 let baseImageURL = "https://image.tmdb.org/t/p/w185";
@@ -43,3 +44,21 @@ function render(movie) {
     console.log(image)
     movieList.append(title, rating, image, year, space1, plot, space2)
 }
+
+fetch('http://localhost:3000/users')
+    .then(response => response.json())
+    .then(users => createUserOptions(users))
+
+    function createUserOptions(users) {
+        const userField = document.querySelector('#username-field')
+
+        users.map(user => {
+            const userOption = document.createElement('option')
+
+            userOption.value = user.id
+            userOption.textContent = user.name
+
+            userField.appendChild(userOption)
+        })
+    }
+
