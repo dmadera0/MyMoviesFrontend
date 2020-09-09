@@ -5,14 +5,25 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>MyMovies</title>
     <script defer src="index.js"></script>
+    <link rel="stylesheet" href="index.css"></rel>
 </head>
 <body>
     <h1>Main Page</h1>
-        <form method="POST" action="http://localhost:3000/users">
+        <form id= "form" method="POST" action="http://localhost:3000/users">
             <label for="name-field">Name:</label>
             <input name="name" type="text" id="name-field">
             <input type="submit" value="Add User">
         </form>
+        <br>
+        <form method="POST" action="http://localhost:3000/movies">
+            <!-- <label for="name-field">Name:</label> -->
+            <!-- <input name="name" type="text" id="name-field">
+            <input type="submit" value="Add User"> -->
+        </form>
+
+        <br>
+
+        <main id="main-page"></main>
 
     <h2>See all Users</h2>
         <form method ="GET" action="http://localhost:3000/users">
