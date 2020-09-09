@@ -1,0 +1,53 @@
+
+
+/* .overview {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: lightsteelblue;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid midnightblue;
+} */
+
+/* .title{
+    display: block;
+    width: 600px;
+} */
+h1 {
+    text-align: left;
+    padding-left: 50px;
+}
+
+#form {
+    padding-left: 50px;
+}
+main {
+    display: inline-block;
+    /* background: lightsteelblue; */
+    width: 500px;
+    text-align: justify;
+    padding-left: 50px;
+}
+
+.rating {
+    text-align: center;
+    width: 185px;
+    back
+    /* background-color: salmon; */
+}
+
+div .image {
+    transition: background .5s ease-in, transform .2s ease-in-out;  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+}
+
+.image:hover {
+    background: white ;
+    transform: scale(1.2);
+}
