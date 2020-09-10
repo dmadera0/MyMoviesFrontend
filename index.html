@@ -12,19 +12,17 @@
 		<img src="reel.png" width="1000" alt="movie reel" class="reel" />
 	</div> -->
     <h1>Movie Mania</h1>
-    <h3>See All Movies</h3>
-    <div class="bimage"></div>
+    <!-- <h3>See All Movies</h3> -->
         <form id= "form" method="POST" action="http://localhost:3000/users">
             <label for="name-field">Name:</label>
             <input name="name" type="text" id="name-field" placeholder="Enter Name">
             <input type="submit" value="Add User">
         </form>
         <br>
-        <h2>
-            <a href="http://localhost:3001/movies.html">See all Movies</a>
-        </h2>
-        <form method="POST" action="http://localhost:3000/movies">
-        </form>
+
+    <h2><a href="movies.html">See All Movies</a></h2>
+
+        <form method="POST" action="http://localhost:3000/movies"></form>
         <br>
     <h3>See All Users</h3>
         <form id="favorite-movies" method ="GET" action="http://localhost:3000/users">
@@ -32,11 +30,7 @@
             <select id="username-field" name="user_id"> </select>
             <!-- <input type="submit" value="See Existing Users"> -->
         </form>
-
         <br>
-
-
     <main id="main-page"></main>
-
 </body>
 </html>

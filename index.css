@@ -30,6 +30,18 @@ h1, h2, h3, form {
     justify-content: center;
 }
 
+h2 a {
+    color: mintcream;
+    background: slategrey;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+h2 a:hover {
+    background: rgba(47, 48, 97, 80%);
+}
+
 #favorite-movies {
     padding-bottom: 50px;
 }
