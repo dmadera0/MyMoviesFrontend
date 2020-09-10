@@ -3,9 +3,9 @@ const apiKey = "eccae21236f50571310ed5eb92155abe"
 
 let baseImageURL = "https://image.tmdb.org/t/p/w185";
 
-// `https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}&language=en-US&page=2`
 
 fetch("http://localhost:3000/movies")
+
     .then(response => response.json())
     .then(movies => handle(movies))
 
