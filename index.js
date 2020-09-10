@@ -17,35 +17,34 @@ function handle(movies) {
 const movieList = document.querySelector("#main-page")
 
 function render(movie) {   
-    const title = document.createElement("h2")
+    const title = document.createElement("div")
     title.innerText = movie.title
     console.log(movie.title)
     title.className = "overview"
 
-    const rating = document.createElement("h3")
-    rating.innerText = movie.rating
-    rating.className = "rating"
+    // const rating = document.createElement("h3")
+    // rating.innerText = movie.rating
+    // rating.className = "rating"
 
     const space1 = document.createElement("br")
-    const space2 = document.createElement("br")
+    // const space2 = document.createElement("br")
 
-    const releaseDate = document.createElement("div")
-    releaseDate.innerText = `Release Date: ${movie.year}`
-    releaseDate.className = "overview"
+    // const releaseDate = document.createElement("div")
+    // releaseDate.innerText = `Release Date: ${movie.year}`
+    // releaseDate.className = "overview"
 
     const image = document.createElement("div")
     image.innerHTML = `<a href="movie.html?id=${movie.id}"><img src="${baseImageURL}${movie.image}"></a>`
     image.className = "image"
 
-    // const backdrop = document.createElement("div")
-    // backdrop.innerHTML = `<img src="https://image.tmdb.org/t/p/w185${movie.backdrop_path}">`
+    image.appendChild(title)
 
-    const plot = document.createElement("div")
-    plot.innerText = movie.plot
-    plot.className = "overview"
+    // const plot = document.createElement("div")
+    // plot.innerText = movie.plot
+    // plot.className = "overview"
 
     // console.log(image)
-    movieList.append(title, rating, image, releaseDate, space1, plot, space2)
+    movieList.append(image, space1 )
 }
 
 fetch('http://localhost:3000/users')
