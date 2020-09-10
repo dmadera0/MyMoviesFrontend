@@ -3,16 +3,6 @@ h1{
     display: flexbox;
 }
 
-body { 
-    background-position: center
-
+body.movies {
+ ;
 }
-
-main {
-    display: inline-block;
-    /* background: lightsteelblue; */
-    width: 500px;
-    text-align: justify;
-    padding-left: 50px;
-}
-
