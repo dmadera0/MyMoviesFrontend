@@ -1,8 +1,51 @@
-h1{
+
+h1, h3 {
     text-align: center;
-    display: flexbox;
 }
 
-body.movies {
- ;
+main {
+    /* color: mintcream; */
+    /* display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    text-align: center; */
 }
+
+/* #movie {
+    max-width: 100%;
+} */
+
+.plot-field {
+    /* display: block; */
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+.rating {
+    color: navy;
+    text-align: center;
+    padding: 1.5em;
+    font-size: 1.5em;
+}
+
+.rating img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 12%;
+  padding-bottom: 20px;
+}
+
+.release-date {
+    text-align: center;
+}
+
+
+
+
