@@ -8,10 +8,15 @@
     <link rel="stylesheet" href="index.css"></rel>
 </head>
 <body>
-    <h1>Main Page</h1>
+    <!-- <div class="wrapper">
+		<img src="reel.png" width="1000" alt="movie reel" class="reel" />
+	</div> -->
+    <h1>Movie Mania</h1>
+    <h3>See All Movies</h3>
+    <div class="bimage"></div>
         <form id= "form" method="POST" action="http://localhost:3000/users">
             <label for="name-field">Name:</label>
-            <input name="name" type="text" id="name-field">
+            <input name="name" type="text" id="name-field" placeholder="Enter Name">
             <input type="submit" value="Add User">
         </form>
         <br>
@@ -19,15 +24,19 @@
             <a href="http://localhost:3001/movies.html">See all Movies</a>
         </h2>
         <form method="POST" action="http://localhost:3000/movies">
-            <!-- <label for="name-field">Name:</label> -->
-            <!-- <input name="name" type="text" id="name-field">
-            <input type="submit" value="Add User"> -->
+        </form>
+        <br>
+    <h3>See All Users</h3>
+        <form id="favorite-movies" method ="GET" action="http://localhost:3000/users">
+            <!-- <label for="username-field"></label> -->
+            <select id="username-field" name="user_id"> </select>
+            <!-- <input type="submit" value="See Existing Users"> -->
         </form>
 
         <br>
 
-        <main id="main-page"></main>
 
+    <main id="main-page"></main>
 
 </body>
 </html>
