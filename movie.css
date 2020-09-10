@@ -1,14 +1,18 @@
 h1{
     text-align: center;
-    display: flex;
+    display: flexbox;
 }
 
 body { 
-    background-color:red;
+    background-position: center
 
 }
 
-div{
-    display: ;
-
+main {
+    display: inline-block;
+    /* background: lightsteelblue; */
+    width: 500px;
+    text-align: justify;
+    padding-left: 50px;
 }
+

@@ -6,9 +6,9 @@ fetch('http://localhost:3000/movies')
         const movieList = document.querySelector('#movies')
         
         movies.forEach(movies => {
-            const movieElement = document.createElement('li')
+            const movieElement = document.createElement('div')
 
-            movieElement.innerHTML = name
+            movieElement.textContent = movies.title
 
             movieList.appendChild(movieElement)
         })
