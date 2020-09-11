@@ -48,12 +48,12 @@ h4 #home {
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 .image {
-  display: block;
+  display: table;
   margin-left: auto;
   margin-right: auto;
   justify-self: center;
-  width: 26%;
-  /* padding-bottom: 20px; */
+  /* width: 26%; */
+  /* margin-left: 580px; */
 }
 
 img:hover {
@@ -73,6 +73,7 @@ img:hover {
 
 .votes {
     text-align: center;
+    color:snow;
 }
 
 

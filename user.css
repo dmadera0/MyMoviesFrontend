@@ -56,7 +56,7 @@ img:hover {
 }
 h2 {
     display: block;
-    /* color: white; */
+    color: white;
 }
 
 h4 a {
@@ -69,8 +69,19 @@ main {
 
 main li {
     font-style: italic;
+    color: snow;
 }
 
 h1 {
     font-family: sans-serif;
+    color: snow;
+}
+
+body {
+    background: #081422;
+}
+
+h3 {
+    font-family: sans-serif;
+    color: snow;
 }
