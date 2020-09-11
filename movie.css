@@ -3,17 +3,6 @@ h1, h3 {
     text-align: center;
 }
 
-main {
-    /* color: mintcream; */
-    /* display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 10px;
-    text-align: center; */
-}
-
-/* #movie {
-    max-width: 100%;
-} */
 
 .plot-field {
     /* display: block; */
@@ -21,7 +10,11 @@ main {
     padding-top: 20px;
 }
 
-
+h4 #home {
+    padding-top: 50px;
+    text-decoration: none;
+    text-align: left;
+}
 .rating {
     color: navy;
     text-align: center;
@@ -43,6 +36,10 @@ main {
 }
 
 .release-date {
+    text-align: center;
+}
+
+.votes {
     text-align: center;
 }
 

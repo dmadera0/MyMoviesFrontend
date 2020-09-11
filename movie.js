@@ -22,6 +22,10 @@ function render(movie) {
   year.textContent = `Release Date: ${movie.year}`
   year.className = "release-date"
 
+  const votes = document.createElement("div")
+  votes.innerText = `Total Votes: ${movie.vote_count}`
+  votes.className = "votes"
+
   const plot = document.createElement('div')
   plot.textContent = movie.plot
   plot.className = "plot-field"
@@ -30,5 +34,13 @@ function render(movie) {
   rating.innerHTML= `<img src="favorite.png" width="30" height=auto >${movie.rating}</img>`
   rating.className = "rating"
 
-  movieNode.append(title, rating, image, year, plot)
+  // const homePage = document.createElement('h4')
+  // homePage.innerText = <a id="home" href="/index.html">Home</a>
+
+
+  {/* // `<a href="movie.html?id=${movie.id}"><img src="${baseImageURL}${movie.image}"></a>` */}
+
+  // movieNode.appendChild(homePage)
+
+  movieNode.append(title, rating, image, votes, year, plot)
 }
