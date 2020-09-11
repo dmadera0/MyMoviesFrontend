@@ -1,6 +1,20 @@
 let baseImageURL = "https://image.tmdb.org/t/p/w185";
 
-fetch("http://localhost:3000/movies")
+const searchParams = new URLSearchParams(window.location.search)
+const search = searchParams.get("search")
+
+
+const id = searchParams.get("id")
+
+baseURL = "http://localhost:3000";
+movieURL = `${baseURL}/movies`;
+
+
+if (search) {
+    movieURL = `${movieURL}?search=${search}`;
+}
+
+fetch(movieURL)
     .then(response => response.json())
     .then(movies => handle(movies))
 
@@ -30,26 +44,23 @@ function render(movie) {
 
 fetch('http://localhost:3000/users')
     .then(response => response.json())
-    .then(users => createUserOptions(users))
+    .then(users => createUserLink(users))
+    
 
-function createUserOptions(users) {
-    const userField = document.querySelector('#username-field')
+    function createUserLink(users) {
+        // const userField = document.querySelector('#username-field')
+        const nav = document.querySelector("#user-form")
     
     users.map(user => {
-        const userOption = document.createElement('option')
+        const userLink = document.createElement('div')
+        userLink.value = user.id
+        userLink.innerText = user.password
+        userLink.innerText = user.name
+        userLink.innerHTML = `<a href="user.html?user_id=${user.id}">${user.name}</a>`
         
-        userOption.value = user.id
-        userOption.textContent = user.name
-        
-        userField.appendChild(userOption)
+        // nav.appendChild(userLink)
     })
 }
 
-
-// function seeAllMovies {
-    //     const h3 = document.createElement("h3")
-    //     h3.innerHTML = <a href="movies.html">See All Movies</a>
-    
-    // }
     
 // const apiKey = "eccae21236f50571310ed5eb92155abe"

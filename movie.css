@@ -6,14 +6,6 @@ h1 {
     
 }
 
-main {
-    /* color: mintcream; */
-    /* display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 10px;
-    text-align: center; */
-}    
-
 
 body {
     background: #081422;
@@ -30,7 +22,11 @@ body {
 
 }
 
-
+h4 #home {
+    padding-top: 50px;
+    text-decoration: none;
+    text-align: left;
+}
 .rating {
     color:snow;
     text-align: center;
@@ -72,6 +68,10 @@ img:hover {
 
 .release-date {
     color: snow;
+    text-align: center;
+}
+
+.votes {
     text-align: center;
 }
 
