@@ -11,7 +11,7 @@ fetch(`http://localhost:3000/movies/${id}`)
 const movieNode = document.querySelector("#movie")
 
 function render(movie) {
-  const title = document.createElement('h3')
+  const title = document.createElement('h1')
   title.textContent = movie.title
 
   const image = document.createElement('div')
