@@ -1,5 +1,9 @@
 h1{
     text-align: center;
+    color: snow;
+}
+body {
+    background: #081422;
 }
 
 .wrapper{
@@ -10,6 +14,7 @@ h1{
 div.text {
     text-align: center;
     font-size: 15px;
+    color: snow;
 }
 
 img {

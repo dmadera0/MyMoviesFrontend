@@ -1,13 +1,25 @@
 
-h1, h3 {
+h1 {
     text-align: center;
+    color: snow;
+    font: xx-large;
+    
 }
 
 
+body {
+    background: #081422;
+}
 .plot-field {
     /* display: block; */
+    border: flex;
     text-align: center;
     padding-top: 20px;
+    background-origin: padding-box;
+    color:snow;
+    border-style: solid;
+    border-color: rgb(85, 74, 9);
+
 }
 
 h4 #home {
@@ -16,32 +28,53 @@ h4 #home {
     text-align: left;
 }
 .rating {
-    color: navy;
+    color:snow;
     text-align: center;
     padding: 1.5em;
     font-size: 1.5em;
 }
 
 .rating img {
+    transform: rotate(180deg);
     display: block;
     margin-left: auto;
     margin-right: auto;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
 }
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
 .image {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 12%;
-  padding-bottom: 20px;
+  justify-self: center;
+  width: 26%;
+  /* padding-bottom: 20px; */
+}
+
+img:hover {
+    border: 5px solid #f4f4f4;
+   transform: scale(1.8);
+     -webkit-transition-duration: 1s;
+   -moz-transition-duration: 1s;
+   -o-transition-duration: 1s;
+   transition-duration: 1s;
+    z-index: 3;
 }
 
 .release-date {
+    color: snow;
     text-align: center;
 }
 
 .votes {
     text-align: center;
 }
+
 
 
 
